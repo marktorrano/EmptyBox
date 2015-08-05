@@ -57,9 +57,29 @@ $(document).ready(function(){
         ]
     });
     
+    /* Staggered */
+    
+    var options = [
+    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' }
+  ];
+  Materialize.scrollFire(options);
+    
+    /* STAGGERED */
+    
+    
+    
+    $('.bbj').hover(function(){
+       Materialize.showStaggeredList('#staggered'); 
+    
+    });
+    
 });
 
-
+var options = [
+    {selector: '.class', offset: 200, callback: 'globalFunction()' },
+    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
+  ];
+  Materialize.scrollFire(options);
 
 
 

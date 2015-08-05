@@ -24,9 +24,12 @@ body {
     width: 100%;
 }
 
+.logo {
+    max-width: 60px;
+}
+
 .rp{
-    color: #ff5252;   
-    
+    color: #ff5252;       
 }
 
 .parallax-container {

@@ -11,24 +11,26 @@
         
 	</head>
 <body>
-    <nav class="">
-        <div class="nav-wrapper container">
-          <a href="#!" class="brand-logo">Logo</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">About</a></li>
-            <li><a href="badges.html">Projects</a></li>
-            <li><a href="collapsible.html">Skills</a></li>
-            <li><a href="mobile.html">Contact</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">About</a></li>
-            <li><a href="badges.html">Projects</a></li>
-            <li><a href="collapsible.html">Skills</a></li>
-            <li><a href="mobile.html">Contact</a></li>
-          </ul>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper container">
+              <a href="#!" class="brand-logo"><img src="images/empty-logo.png" class="logo"/></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">About</a></li>
+                <li><a href="badges.html">Projects</a></li>
+                <li><a href="collapsible.html">Skills</a></li>
+                <li><a href="mobile.html">Contact</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">About</a></li>
+                <li><a href="badges.html">Projects</a></li>
+                <li><a href="collapsible.html">Skills</a></li>
+                <li><a href="mobile.html">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
     
         <section id="section-1">
             <div class="parallax-container">
@@ -53,15 +55,16 @@
         <div class="divider"></div><br/>
         <section id="section-3 white">
             <div class="row white">
-                <div class="row container center rp">Recent Projects</div>
+                <div class="row  center rp">Recent Projects</div>
                 <div class="col l6">
                     <img src="images/bbj.png"/>
                 </div>
-                <div class="col l6 sp ">
+                <div class="col l6 sp bbj">
                     <h4>Breads by Josef</h4>
                     <br/>
-                    <p class="desc flow-text">
+                    <p class="desc flow-text" id="staggered-test">
                         A school project for a client named Josef Josef Josefson who owns a bakery in the heart of New Zealand. An expert in bread making who wants people in his area to know about his products and close locations
+                        
                     </p>
                     <a class="waves-effect waves-light btn right case-btn">View Case Study</a>
                 </div>

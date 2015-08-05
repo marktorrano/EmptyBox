@@ -1,5 +1,5 @@
 html { 
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/bg.jpg') no-repeat center center fixed; 
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,12 +7,26 @@ html {
 }
 
 body {
- font-family: source code pro, sans-serif;
+    font-family: source code pro, sans-serif;
+    background: url('') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-container {
+    background: white;
 }
 
 #logo {
     background: url('../images/empty-logo.png');
     width: 100%;
+}
+
+.rp{
+    color: #ff5252;   
+    
 }
 
 .parallax-container {
@@ -26,10 +40,23 @@ body {
 #section-2 {  
 }
 
+#section-3{
+    height: 100%;   
+}
+
 .about {
     padding: 5% 0;
 }
 
 img {
     width: 100%
+}
+
+.case-btn {
+    vertical-align: bottom;
+}
+
+
+#section-1 {
+    ;
 }

@@ -1,7 +1,7 @@
 $(document).ready(function(){    
     
     
-    $('.parallax').parallax();
+  /* $('.parallax').parallax();*/
     
     vpw = $(window).width();
     vph = $(window).height();
@@ -48,7 +48,20 @@ $(document).ready(function(){
         scrollToElement('#foot', 600);
     });
     
+    $("body").vegas({
+    slides: [
+        { src: "./images/bg.jpg" },
+        { src: "./images/bg2.png" },
+        { src: "./images/bg3.png" },
+        { src: "./images/bg4.png" }
+        ]
+    });
+    
 });
+
+
+
+
 
 
 var scrollToElement = function(el, ms){

@@ -48,6 +48,10 @@ body {
     padding: 5% 0;
 }
 
+.img-auto{
+    width: 100%;
+}
+
 img {
     width: 100%
 }

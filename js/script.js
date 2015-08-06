@@ -48,6 +48,8 @@ $(document).ready(function(){
         scrollToElement('#foot', 600);
     });
     
+    
+    
     $("body").vegas({
     slides: [
         { src: "./images/bg.jpg" },
@@ -59,30 +61,30 @@ $(document).ready(function(){
         animation: 'random',
         delay: 4000,
     });
+
     
-    /* Staggered */
-    
-    var options = [
-    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' }
-  ];
-  Materialize.scrollFire(options);
-    
-    /* STAGGERED */
-    
-    
+    /*
     
     $('.bbj').hover(function(){
        Materialize.showStaggeredList('#staggered'); 
     
     });
+    */
+    $('.parallax-window').parallax({imageSrc: '../images/sp-mockup.png'});
+    
     
 });
 
-var options = [
-    {selector: '.class', offset: 200, callback: 'globalFunction()' },
-    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
-  ];
-  Materialize.scrollFire(options);
+
+
+
+
+
+
+
+
+
+
 
 
 

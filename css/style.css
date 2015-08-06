@@ -33,7 +33,7 @@ body {
 }
 
 .parallax-container {
-      height: 700px;;
+      min-height: 700px;;
     }
 
 .img-auto {
@@ -70,4 +70,13 @@ img {
 
 #section-1 {
     ;
+}
+
+.mockup {
+    width: 50%;
+}
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
 }

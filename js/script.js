@@ -54,7 +54,10 @@ $(document).ready(function(){
         { src: "./images/bg2.png" },
         { src: "./images/bg3.png" },
         { src: "./images/bg4.png" }
-        ]
+        ],
+        transition: [ 'zoomOut', 'fade', 'blur2'],
+        animation: 'random',
+        delay: 4000,
     });
     
     /* Staggered */

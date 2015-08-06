@@ -29,19 +29,19 @@ $(document).ready(function(){
     });
     
     $('.link-1').click(function(){
-        scrollToElement('#main-container', 600);
+        scrollToElement('#section-1', 600);
     });
     
     $('.link-2').click(function(){
-        scrollToElement('#sec-2', 600);
+        scrollToElement('#section-2', 600);
     });
     
     $('.link-3').click(function(){
-        scrollToElement('.history', 600);
+        scrollToElement('#section-3', 600);
     });
     
     $('.link-4').click(function(){
-        scrollToElement('#sec-3', 600);
+        scrollToElement('#section-4', 600);
     });
     
     $('.link-5').click(function(){
@@ -87,7 +87,7 @@ var options = [
 
 
 
-var scrollToElement = function(el, ms){
+function scrollToElement(el, ms){
     var speed = (ms) ? ms : 600;
     $('html,body').animate({
         scrollTop: $(el).offset().top

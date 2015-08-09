@@ -76,6 +76,16 @@ img {
     vertical-align: bottom;
 }
 
+a.sitemap {
+ color: white;
+}
+a.sitemap:active, a.sitemap:visited, a.sitemap:link {
+ color: white;   
+}
+
+footer a{
+ color: white;   
+}
 
 #section-1 {
     ;

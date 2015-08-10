@@ -82,11 +82,27 @@ $(document).ready(function(){
 
 
 
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 2000);
 
+    function checkReady() {
+        if (document.readyState === "complete") {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
 
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
 
-
-
+onReady(function () {
+    
+    show('main-container', true);
+    $('#preloader').css('opacity','.01');
+    trans('#preloader', 1);       
+});
 
 
 function scrollToElement(el, ms){

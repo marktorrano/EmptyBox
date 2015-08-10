@@ -62,16 +62,19 @@ $(document).ready(function(){
         delay: 4000,
     });
 
-    
-    /*
-    
-    $('.bbj').hover(function(){
-       Materialize.showStaggeredList('#staggered'); 
-    
-    });
-    */
+ 
     $('.parallax-window').parallax({imageSrc: '../images/sp-mockup.png'});
     
+    
+    var options = [
+        {selector: '#online-portfolio', offset: 200, callback: 'Materialize.fadeInImage("#online-portfolio")' },
+        {selector: '#bbj', offset: 200, callback: 'Materialize.fadeInImage("#bbj")' },
+        {selector: '#globe1', offset: 200, callback: 'Materialize.fadeInImage("#globe1")' },
+        {selector: '#globe2', offset: 200, callback: 'Materialize.fadeInImage("#globe2")' },
+        
+    ];
+  
+    Materialize.scrollFire(options);
     
 });
 
@@ -83,7 +86,7 @@ $(document).ready(function(){
 
 
 function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 2000);
+    var intervalID = window.setInterval(checkReady, 1000);
 
     function checkReady() {
         if (document.readyState === "complete") {
@@ -142,26 +145,3 @@ function trans(elem, sec) {
     $(elem).css('-o-transition' , 'all ' +sec+ 's ease');
     $(elem).css('transition' , 'all ' +sec+ 's ease');
 }
-/*
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-
-    function checkReady() {
-        if (document.readyState === "complete") {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-/*
-onReady(function () {
-    
-    show('main-container', true);
-    $('#preloader').css('opacity','.01');
-    trans('#preloader', 1);
-    
-});*/

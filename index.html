@@ -5,6 +5,9 @@
         <title>
             Empty Box Designs | We think outside of it!
         </title>
+        
+        <link rel="shortcut icon" type="image/png" href="images/empty-logo.png"/>
+        
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/vegas/vegas.css"/>
@@ -13,7 +16,8 @@
         
         <script src="js/script.js"></script>
         <script src="js/vegas/vegas.js"></script>
-        <script src="js/parallax.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/jquery.easing.js"></script>
         
 	</head>
 <body>
@@ -25,19 +29,10 @@
         <div class="center">
             <div class="logo-preloader">
                 <img src="images/empty-logo.png"/><br/>              
-                <p class="white-text">EmptyBox Designs</p>       
+                <p class="white-text flow-text">EmptyBox Designs</p>       
             </div>
         </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    </div>    
     
     <div id="main-container">
     
@@ -63,18 +58,23 @@
         </div>
 
             <section id="section-1">
-                <div class="parallax-container">
-              <div class="parallax"><img src="images/bg.jpg"></div>
-            </div>
+                <div class="row container white-text">
+                    
+                        <div class="col l4 valign-wrapper">
+                            
+                        </div>
+                    
+                </div>
 
             </section>
         <div class="main-container">
             <section id="section-2">
-                <div class="row ">
-                    <div class="row container about">
+                <div class="row about" id="about">
+                    <div class="row container">
                         <div class="col l8 offset-l2 center">
+                            <br/><br/>
                         <h3>My name is Mark Torrano</h3>
-                        <h5>Designer, Developer, Awesome</h5>
+                        <h5 class="flow-text">Designer, Developer, Awesome</h5>
                             <p class="flow-text">
         UI designer by day, UX developer by night. Specializes in responsive web designs, I deliver projects following W3C standards, capable of handling cross browser compatibility and always looking for new and innovative designs.
                                 </p>
@@ -85,21 +85,23 @@
             <section id="section-3" class="card-panel">
 
                 <div class="row white">
-                    <div class="divider"></div>
+                    <div class="divider"></div><br/>
                     <div class="row  center rp">Recent Projects</div><br/>
                     
-                    <div class="row card-panel">                        
+                    <div class="row card-panel onlineportfolio">                        
                         <div class="col l6">
-                            <h4>Online Portfolio</h4>
-                            <img src="images/portfolio.png"/>
+                            <span class="card-title">ONLINE PORTFOLIO</span>
+                            <img class="exempt" id="online-portfolio" src="images/portfolio.png"/>
+                            
                         </div>
                         <div class="col l6 sp bbj">
 
-                            <br/>
-                            <p class="desc flow-text" id="staggered-test">
-                                My personal online portfolio showcasing my projects, skills and contact details.
-
-                            </p>
+                            <br/><br/>
+                            <ul>
+                                <li class="desc flow-text" id="staggered-test">
+                                    My personal online portfolio showcasing my projects, skills and contact details.
+                                </li>
+                            </ul>
                             <a class="waves-effect waves-light btn right case-btn" href="http://www.marktorrano.netii.net" target="_blank">View Project</a>
                         </div>                        
                     </div>
@@ -107,12 +109,13 @@
                 </div>
                 <div class="row white">
                     <div class="row card-panel">
-                        <div class="col l6">
-                            <h4>Breads by Josef</h4>
-                            <img src="images/bbj.png"/>
+                        <div class="col l6">    
+                            <span class="card-title">BREADS BY JOSEF</span>
+                            <img class="exempt" id="bbj" src="images/bbj.png"/>
+                            
                         </div>
                         <div class="col l6 sp bbj">                        
-                            <br/>
+                            <br/><br/>
                             <p class="desc flow-text" id="staggered-test">
                                 A school project for a client named Josef Josef Josefson who owns a bakery in the heart of New Zealand. An expert in bread making who wants people in his area to know about his products and close locations
 
@@ -125,11 +128,12 @@
                 <div class="row white ">
                     <div class="row card-panel">
                         <div class="col l6 ams">
-                            <h4>Globe Telecom's Account Management Website</h4>
-                            <img class="card-panel" src="images/globe2.png"/>
+                            <span class="card-title">ACCOUNT MANAGEMENT WEBSITE</span>
+                            <img class="exempt" id="globe1" src="images/globe2.png"/>
+                            
                         </div>
                         <div class="col l6 sp ">                        
-                            <br/>
+                            <br/><br/>
                             <p class="desc flow-text">
                                 An industry project built for Globe Telecommunications. Globe Telcom is one of the leading mobile carrier in the Philippines. This project caters the company's current and future postpaid subscribers.
                             </p>
@@ -141,11 +145,13 @@
                 <div class="row white">
                     <div class="row card-panel">
                         <div class="col l6">
-                            <h4>Globe Telecom's Best Ever My SuperPlan</h4>
-                            <img src="images/be.png"/>
+                            
+                            <span class="card-title">BEST EVER MY SUPERPLAN</span>
+                            <img class="exempt" id="globe2" src="images/be.png"/>
+                            
                         </div>
                         <div class="col l6 sp bbj">                        
-                            <br/>
+                            <br/><br/>
                             <p class="desc flow-text" id="staggered-test">
                                 A web application for Globe's current and future postpaid subscribers. It is a plan builder available in the web and stores.
 
@@ -190,6 +196,7 @@
         <footer class="page-footer teal accent-4 white-text">
             <div id="foot" class="row container">
                 <div class="col l6">
+                    <br/>
                     <h5>I'd like to hear from you!</h5>
 
                     <div class="row">
@@ -212,6 +219,7 @@
 
                 </div>
                 <div class="col l4 offset-l2">
+                    <br/>
                     <p>Sitemap</p>
                     <ul class="sitemap">
                         <li><a href="#"  class="link-2">About</a></li>

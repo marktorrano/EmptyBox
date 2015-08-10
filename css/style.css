@@ -50,7 +50,7 @@ input#name {
 }
 
 .logo-preloader {
- width: 10%; 
+    width: 13%; 
     top: 30%;
     position: fixed;
     top: 30%;
@@ -76,28 +76,34 @@ input#name {
     height: 100%; 
 }
 
-.section-4 {
-    padding: 5% 0;   
+.section-4 { 
 }
 
 .about {
-    padding: 5% 0;
 }
 
 .img-auto{
     width: 100%;
 }
 
+#online-portfolio, #bbj, #globe1, #globe2{
+    opacity: .01;
+}
+
 .rp {
  font-size: 2em;   
 }
 
-img {
+img.exempt {
     width: 100%
 }
 
 .case-btn {
     vertical-align: bottom;
+}
+
+.middle {
+    top: 30%;
 }
 
 a.sitemap {
@@ -112,7 +118,7 @@ footer a{
 }
 
 #section-1 {
-    ;
+    min-height: 768px;
 }
 
 .mockup {

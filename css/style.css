@@ -86,7 +86,7 @@ input#name {
     width: 100%;
 }
 
-#online-portfolio, #bbj, #globe1, #globe2{
+#online-portfolio, #bbj, .bbj, #globe1, .globe1, #globe2, .globe2, .onlineportfolio{
     opacity: .01;
 }
 

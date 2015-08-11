@@ -67,10 +67,10 @@ $(document).ready(function(){
     
     
     var options = [
-        {selector: '#online-portfolio', offset: 200, callback: 'Materialize.fadeInImage("#online-portfolio")' },
-        {selector: '#bbj', offset: 200, callback: 'Materialize.fadeInImage("#bbj")' },
-        {selector: '#globe1', offset: 200, callback: 'Materialize.fadeInImage("#globe1")' },
-        {selector: '#globe2', offset: 200, callback: 'Materialize.fadeInImage("#globe2")' },
+        {selector: '.onlineportfolio', offset: 200, callback: 'Materialize.fadeInImage(".onlineportfolio")' },
+        {selector: '.bbj', offset: 200, callback: 'Materialize.fadeInImage(".bbj")' },
+        {selector: '.globe1', offset: 200, callback: 'Materialize.fadeInImage(".globe1")' },
+        {selector: '.globe2', offset: 200, callback: 'Materialize.fadeInImage(".globe2")' },
         
     ];
   

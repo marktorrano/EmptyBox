@@ -1,7 +1,7 @@
 $(document).ready(function(){    
     
     
-  /* $('.parallax').parallax();*/
+   $('.parallax').parallax();
     
     vpw = $(window).width();
     vph = $(window).height();
@@ -33,15 +33,15 @@ $(document).ready(function(){
     });
     
     $('.link-2').click(function(){
-        scrollToElement('#section-2', 600);
+        scrollToElement('#about-anchor', 600);
     });
     
     $('.link-3').click(function(){
-        scrollToElement('#section-3', 600);
+        scrollToElement('#projects-anchor', 600);
     });
     
     $('.link-4').click(function(){
-        scrollToElement('#section-4', 600);
+        scrollToElement('#skills-anchor', 600);
     });
     
     $('.link-5').click(function(){
@@ -50,7 +50,9 @@ $(document).ready(function(){
     
     
     
-    $("body").vegas({
+    
+    
+    $("#section-1").vegas({
     slides: [
         { src: "./images/bg.jpg" },
         { src: "./images/bg2.png" },
@@ -115,6 +117,7 @@ function scrollToElement(el, ms){
     }, speed);
 }
 
+/*
 $(function(){
       //Keep track of last scroll
       var lastScroll = 0;
@@ -137,6 +140,8 @@ $(function(){
           lastScroll = st;
     });
 });
+
+*/
 
 function trans(elem, sec) {
     $(elem).css('-webkit-transition' , 'all ' +sec+ 's ease');

@@ -8,6 +8,8 @@
         
         <link rel="shortcut icon" type="image/png" href="images/empty-logo.png"/>
         
+        <link rel="stylesheet" href="css/animate.min.css"/>
+        
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/vegas/vegas.css"/>
@@ -36,6 +38,27 @@
     
     <div id="main-container">
     
+        <div class="menu hide-on-large-only">
+            
+            <div class="menu-logo">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>   
+            <div class="close-button">
+                <div class="x-button">X</div>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="link-2 link">About</li>
+                    <li class="link-3 link">Projects</li>
+                    <li class="link-4 link">Skills</li>
+                    <li class="link-5 link">Contact</li>
+                </ul>
+            </div>
+        </div>
+        
+        
         <div class="navbar-fixed">
             <nav class="black">
                 <div class="nav-wrapper container">
@@ -56,32 +79,42 @@
                 </div>
             </nav>
         </div>
-
-            <section id="section-1">
-                <div class="row container white-text">
-                    
-                        <div class="col l4 valign-wrapper">
-                            
-                        </div>
-                    
+        <div class="parallax-container">
+            <section id="section-1" class="valign-wrapper">
+                <div class="row container white-text valign"> 
+                    <div class="col center"></div>
+                    <div id="name" class="col s4 offset-l2">
+                        <h3 id="myName" class="flow-text">My name is Mark Torrano</h3>
+                        <p id="myName" class="flow-text">Designer, Developer, Awesome...<span id="insertion">|</span></p>
+                        
+                    </div>
                 </div>
-
-            </section>
+                <div class="row container">
+                    <div class="col l2 offset-l4">
+                        <div class="arrow animated infinite bounce"></div>
+                    </div>                
+                </div>
+            </section>            
+        </div>
+        <div id="about-anchor"></div>
         <div class="main-container">
             <section id="section-2">
                 <div class="row about" id="about">
                     <div class="row container">
+                        
                         <div class="col l8 offset-l2 center">
                             <br/><br/>
-                        <h3>My name is Mark Torrano</h3>
-                        <h5 class="flow-text">Designer, Developer, Awesome</h5>
+                        
+                        <!-- <h5 class="flow-text">Designer, Developer, Awesome</h5>-->
                             <p class="flow-text">
         UI designer by day, UX developer by night. Specializes in responsive web designs, I deliver projects following W3C standards, capable of handling cross browser compatibility and always looking for new and innovative designs.
                                 </p>
-                        </div>
-                    </div>            
+                        </div>                        
+                    </div>   
+                    <div id="projects-anchor"></div>
                 </div>
             </section>
+            
             <section id="section-3" class="card-panel">
 
                 <div class="row white">
@@ -158,8 +191,12 @@
                             </p>
                             <a class="waves-effect waves-light btn right case-btn" href="http://www.globe.com.ph/postpaid" target="_blank">View Project</a>
                         </div>
+                        
                     </div>
+                    <div id="skills-anchor"></div>
                 </div>
+                
+                
 
             </section>
             <section id="section-4" class="section-4  grey darken-4">

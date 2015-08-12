@@ -29,11 +29,11 @@ body {
 
 .menu-container {
     background: #000;
-    width: 50%;
+    width: 70%;
     position: fixed;
     z-index: 999;
     height: 100%;
-    right: -50%;    
+    right: -70%;    
 }
 
 .menu-list {
@@ -169,6 +169,17 @@ p#myName:nth-child(2){
     width: 100%;
 }
 
+.submit-button {
+    margin-top: 100px;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 500;
+    color: white;
+    
+}
+
 .arrow {
   position: absolute;
   bottom: 10%;
@@ -214,6 +225,108 @@ p#myName:nth-child(2){
 img.exempt {
     width: 100%
 }
+
+#img-4 {
+    
+    background: url('/images/wf.png') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+}
+
+#img-3 {
+    
+    background: url('/images/flat.png') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+}
+
+#img-2 {
+    
+    background: url('/images/rwd.png') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+}
+
+#img-1 {
+    
+    background: url('/images/dev.png') no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+}
+
+/*#html-circle {
+ background: url('/images/html.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+#css3-circle {
+    background: url('/images/css3.png') no-repeat;
+    background-size: cover;
+  width: 100%;
+    float: left;
+    height: auto;
+}
+
+#js-circle {
+    background: url('/images/javascript.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+#ps-circle {
+    background: url('/images/photoshop.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: auto;
+}*/
+
+
+
+.background-text {
+    background: #2E2D2D;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;    
+}
+
+.background-text:hover {
+    cursor: pointer;
+    opacity: .7;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;    
+}
+
+.text {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 35% 0 20% 0;
+    color: #fff;
+    opacity: 1;
+    font-size: 30px;
+}
+
+
+
+
 
 .case-btn {
     vertical-align: bottom;

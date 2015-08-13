@@ -95,6 +95,8 @@ body {
     background-position: center;
 }
 
+
+
 input#name {
     text-transform: capitalize;
     color: whitesmoke;
@@ -114,7 +116,7 @@ input#name {
     top: 30%;
     position: fixed;
     top: 30%;
-    left: 45%;
+    left: ;
 }
 
 #myName {
@@ -359,4 +361,8 @@ footer a{
 .parallax-window {
     min-height: 500px;
     background: transparent;
+}
+
+@media #($small-and-down) {
+
 }

@@ -8,6 +8,16 @@ $(document).ready(function(){
 
     $('.section-1').height(vph);
     
+
+    /*Nav icon*/
+
+    $('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+        $('.menu-container').toggleClass('open-menu');
+        trans('.menu-container', .5);
+	});
+
+
     $('.line').click(function(){
         $('.menu-logo').css('display','none'); 
         $('.menu-logo').css('z-index','-1000');
@@ -48,6 +58,10 @@ $(document).ready(function(){
         scrollToElement('#foot', 600);
     });
     
+    $('.link').hover(function(){
+       $(this).toggleClass('bgcolorfade');
+        trans('.bgcolorfade' , .5);
+    });
    /* function checkPosition() {
     if (window.matchMedia('(max-width: 40.063em)').matches) {
         $('#skills').removeClass('container');
@@ -69,6 +83,8 @@ $(document).ready(function(){
         overlay: 'overlays/08.png',
         
     });
+
+
 
  
     $('.parallax-window').parallax({imageSrc: '../images/sp-mockup.png'});

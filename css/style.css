@@ -523,29 +523,80 @@ footer a{
   top: 29px;
 }
 
+skill-text {
+  position: absolute;
+    z-index: 2;
+}
+
+
+#wf, #flat, #rwd, #dev {
+    overflow: hidden;
+}
+
 .skill:hover {
- cursor: pointer;
+   -webkit-animation: animatedBackground 1s ease-out 1;
+		-moz-animation: animatedBackground 1s ease-out 1;
+		animation: animatedBackground 1s ease-out 1;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+
 }
 
-.skill-title {
-    opacity: .01;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    color: white;
-    padding: 40%;
-    background: black;
-}
+	@-webkit-keyframes animatedBackground {
+		0% {
+			-webkit-transform: scale(1, 1);
+			-moz-transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-o-transform: scale(1, 1);
+			transform: scale(1, 1)
+		}
+		100% {
+		-webkit-transform: scale(1.1, 1.1);
+		-moz-transform: scale(1.1, 1.1);
+		-ms-transform: scale(1.1, 1.1);
+		-o-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1)
+		}
 
-.skill-title:hover {
- opacity: .5;
-}
+	}
+
+
+	@-moz-keyframes animatedBackground {
+		0% {
+			-webkit-transform: scale(1, 1);
+			-moz-transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-o-transform: scale(1, 1);
+			transform: scale(1, 1)
+		}
+		100% {
+			-webkit-transform: scale(1.1, 1.1);
+			-moz-transform: scale(1.1, 1.1);
+			-ms-transform: scale(1.1, 1.1);
+			-o-transform: scale(1.1, 1.1);
+			transform: scale(1.1, 1.1)
+		}
+
+	}
+	@keyframes animatedBackground {
+		0% {
+			-webkit-transform: scale(1, 1);
+			-moz-transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-o-transform: scale(1, 1);
+			transform: scale(1, 1)
+		}
+		100% {
+			-webkit-transform: scale(1.1, 1.1);
+			-moz-transform: scale(1.1, 1.1);
+			-ms-transform: scale(1.1, 1.1);
+			-o-transform: scale(1.1, 1.1);
+			transform: scale(1.1, 1.1)
+		}
+
+	}
 
 /******** TEST AREA *********/
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
 
-}
+

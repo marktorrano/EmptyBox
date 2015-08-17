@@ -21,6 +21,7 @@ $(document).ready(function(){
    /* Load arrow after 10 secs  end*/
 
 
+
     /*Nav icon*/
 
     $('#nav-icon2').click(function(){

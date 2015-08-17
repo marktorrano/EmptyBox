@@ -110,6 +110,10 @@ $(document).ready(function(){
         {selector: '.bbj', offset: 150, callback: 'Materialize.fadeInImage(".bbj")' },
         {selector: '.globe1', offset: 150, callback: 'Materialize.fadeInImage(".globe1")' },
         {selector: '.globe2', offset: 150, callback: 'Materialize.fadeInImage(".globe2")' },
+        {selector: '#wf', offset: 150, callback: 'Materialize.fadeInImage("#wf")' },
+        {selector: '#flat', offset: 150, callback: 'Materialize.fadeInImage("#flat")' },
+        {selector: '#rwd', offset: 150, callback: 'Materialize.fadeInImage("#rwd")' },
+        {selector: '#dev', offset: 150, callback: 'Materialize.fadeInImage("#dev")' },
 
     ];
 
@@ -166,8 +170,12 @@ $(document).ready(function(){
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
 
+
     function checkReady() {
         if (document.readyState === "complete") {
+            $('.svg-logo').removeClass('pulse');
+            $('.svg-logo').addClass('bounceOutUp');
+            $('.svg-logo').removeClass('invinite');
             window.clearInterval(intervalID);
             callback.call(this);
         }

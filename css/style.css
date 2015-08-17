@@ -8,6 +8,7 @@ html {
 
 body {
     font-family: source code pro, sans-serif;
+    font-weight: 100;
     background: url('') #212121 no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -101,6 +102,38 @@ body {
 
 
 
+#holder {
+
+}
+
+
+#img-wf {
+    background: url('/images/wf.png') no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.middle-text {
+    padding-top: 35%;
+}
+
+#img-flat {
+    background: url('/images/flat.png') no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+#img-rwd {
+    background: url('/images/rwd.png') no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+#img-dev {
+    background: url('/images/dev.png') no-repeat;
+    background-size: contain;
+    height: 500px;
+}
 
 #preloader {
     display: block;
@@ -123,12 +156,12 @@ input#name {
 }
 
 #logo {
-    background: url('../images/empty-logo.png');
     width: 100%;
 }
 
 .logo {
     max-width: 55px;
+
 }
 
 .logo-preloader {
@@ -240,7 +273,7 @@ p#myName:nth-child(2){
     width: 100%;
 }
 
-#online-portfolio, #bbj, .bbj, #globe1, .globe1, #globe2, .globe2, .onlineportfolio{
+#online-portfolio, #bbj, .bbj, #globe1, .globe1, #globe2, .globe2, #wf, #flat, #rwd, #dev, .onlineportfolio{
     opacity: .01;
 }
 

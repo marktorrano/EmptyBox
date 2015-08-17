@@ -7,13 +7,13 @@
         </title>
         
         <link rel="shortcut icon" type="image/png" href="images/empty-logo.png"/>
-
         <link rel="stylesheet" href="css/animate.min.css"/>
-        
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/vegas/vegas.css"/>
 
+
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
@@ -34,7 +34,7 @@
         <div >
             <div class="row">
                 <div class="logo-preloader col s6 l2 offset-l5 offset-s3 m4 offset-m4">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="svg-logo animated pulse infinite" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
     <line fill="none" stroke="#EF5455" stroke-width="20" stroke-miterlimit="10" x1="101.8" y1="138.9" x2="101.8" y2="338.9"/>
     <line fill="none" stroke="#EF5455" stroke-width="20" stroke-miterlimit="10" x1="98.8" y1="132.9" x2="240.5" y2="274.6"/>
@@ -104,10 +104,10 @@
         </div>
         
         
-        <div class="navbar-fixed">
+        <div class="navbar-fixed navi">
             <nav class="black">
                 <div class="nav-wrapper container">
-                  <a href="#" class="link-1 brand-logo"><img src="images/empty-logo.png" class="logo"/></a>
+                  <a href="#" class="link-1 brand-logo"><img src="images/empty-logo.png" id="logo" class="logo"/></a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a href="#" class="link-2">About</a></li>
@@ -251,9 +251,9 @@
             </section>
             <section id="section-4" class="section-4  grey darken-4">
                 <br/><br/>
-                <div class="row center flow-text teal-text">Skills</div>
+                <div class="row center flow-text teal-text"><h3>Skills</h3></div>
                 
-                
+                <br/><br/>
                 <div class="row center">
                     <div class="col l3 white-text flow-text">
                      <p>Creating mock-ups for web design. </p>
@@ -372,28 +372,29 @@
                     </div>
                 </div>-->
                 
-                
+                <br/><br/>
                 <div class="row">
                     <div class="row">
-                        <div class="col s12 l6">
-                                <div class="skill-item">Wireframe tools</div>
-                               <img class="exempt skill" src="images/wf.png"/>
-                               
+                        <div id="wf" class="col s12 l6">
+                            <div class="top"></div>
+                                <div class="white-text flow-text center">Wireframe Tools</div>
+                                <img class="exempt skill" src="images/wf.png"/>
+                            <div class="bottom"></div>
                         </div>
-                        <div class="col s12 l6">
-                          
+                        <div id="flat" class="col s12 l6">
+                          <div class="white-text flow-text center">Flat Design</div>
                             <img class="exempt skill" src="images/flat.png"/>
                              
                         </div>  
                     </div>
                     <div class="row">
-                        <div class="col s12 l6">
-                            
+                        <div id="rwd" class="col s12 l6">
+                            <div class="white-text flow-text center">Responsive Web Design</div>
                                <img class="exempt skill" src="images/rwd.png"/>
                              
                         </div>
-                        <div class="col s12 l6">
-                            
+                        <div id="dev" class="col s12 l6">
+                              <div class="white-text flow-text center">Coding</div>
                                <img class="exempt skill" src="images/dev.png"/>
                         </div>  
                     </div>
@@ -401,6 +402,7 @@
                 
                 
                 
+
             </section>
         </div>
         <footer class="page-footer teal accent-4 white-text">

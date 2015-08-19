@@ -10,11 +10,9 @@
 
         <link rel="shortcut icon" type="image/png" href="images/empty-logo.png"/>
         <link rel="stylesheet" href="css/animate.min.css"/>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" rel="stylesheet" media="screen,projection"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/vegas/vegas.css"/>
-        <link rel="stylesheet" href="scss/materialize.scss"/>
-
 
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
@@ -74,7 +72,7 @@
             </div>
 
             <div class="menu-container">
-                <div class="menu-list flow-text">
+                <div class="menu-list">
                     <div class="link-2 link">About</div>
                     <div class="link-3 link">Projects</div>
                     <div class="link-4 link">Skills</div>
@@ -135,7 +133,7 @@
                     <div class="col l2 offset-l4">
 
                         <div class="arrow animated infinite bounce">
-                            scroll down
+                            <div id="sd">scroll down</div>
                        </div>
                     </div>                
                 </div>
@@ -378,6 +376,7 @@
 
                         </div>
                         <div id="flat" class="col s12 l6">
+
                             <div class="white-text flow-text center skill-title">Flat Design</div><br/>
                             <img class="exempt skill" src="images/flat.png"/><br/><br/>
                              
@@ -385,13 +384,16 @@
                     </div>
                     <div class="row">
                         <div id="rwd" class="col s12 l6">
+
                             <div class="white-text flow-text center skill-title">Responsive Web Design</div><br/>
-                               <img class="exempt skill" src="images/rwd.png"/><br/><br/>
+                            <img class="exempt skill" src="images/rwd.png"/><br/><br/>
                              
                         </div>
                         <div id="dev" class="col s12 l6">
+
                               <div class="white-text flow-text center skill-title">Coding</div><br/>
                                <img class="exempt skill" src="images/dev.png"/>
+
                         </div>  
                     </div>
                 </div>
@@ -412,8 +414,8 @@
                             <div class="row">
                                 <div class="input-field col l12">
 
-                                    <input id="email" type="text" class="validate" placeholder="Email" autocomplete="off"> 
-                                    <input id="name" type="text" class="validate" placeholder="Name" autocomplete="off">
+                                    <input id="email" type="text" class="validate" placeholder="Email" autocomplete="off"> <br/>
+                                    <input id="inputname" type="text" class="validate" placeholder="Name" autocomplete="off"><br/>
                                     <a class="waves-effect waves-light btn right case-btn submit-button"  href="#" target="_blank">Submit</a>
 
                                 </div>
@@ -440,7 +442,7 @@
 
             <div class="footer-copyright">
                 <div class="container">
-                 EmptyBox Designs © 2015 Copyright
+                 EmptyBox Designs &copy; 2015 Copyright
                 <a class="grey-text text-lighten-4 right" href="#!"></a>
                 </div>
               </div>
@@ -448,6 +450,17 @@
     </div>
 </body>
     <foot>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66461418-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
@@ -457,4 +470,4 @@
         <script src="js/materialize.min.js"></script>
         <script src="js/jquery.easing.js"></script>
     </foot>
-</html>
+    </html>

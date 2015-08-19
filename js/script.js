@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
 
-   $('.parallax').parallax();
+   /*$('.parallax').parallax();*/
+
+
 
     vpw = $(window).width();
     vph = $(window).height();
@@ -234,4 +236,29 @@ function trans(elem, sec) {
     $(elem).css('-ms-transition' , 'all ' +sec+ 's ease');
     $(elem).css('-o-transition' , 'all ' +sec+ 's ease');
     $(elem).css('transition' , 'all ' +sec+ 's ease');
+}
+
+
+
+/* smooth mouse scroll */
+if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+function handle(delta) {
+    var time = 500; // delay time
+    var distance = 100; // delta point
+    // Dom where it will apply
+    $('html, body').stop().animate({
+        scrollTop: $(window).scrollTop() - (distance * delta)
+    }, time );
 }

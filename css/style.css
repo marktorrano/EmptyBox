@@ -228,6 +228,10 @@ p#myName:nth-child(2){
     font-size: 25px;
 }
 
+.footer-copyright {
+    font-size: .8em;
+}
+
 @keyframes type{
   from { width: 0; }
 }

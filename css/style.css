@@ -207,7 +207,8 @@ body {
 #myName {
     white-space: nowrap;
     overflow: hidden;
-    width:20em;
+    width: 20em;
+    font-weight: 400;
     animation: type 4s steps(50, end);
     -webkit-animation: type 4s steps(50, end);
 }

@@ -90,10 +90,10 @@ $(document).ready(function(){
 
     $("#section-1").vegas({
     slides: [
-        { src: "./images/bg.jpg" },
-        { src: "./images/bg2.png" },
-        { src: "./images/bg3.png" },
-        { src: "./images/bg4.png" }
+        { src: "./images/bg-min.jpg" },
+        { src: "./images/bg2-min.png" },
+        { src: "./images/bg3-min.png" },
+        { src: "./images/bg4-min.png" }
         ],
         transition: [ 'zoomOut', 'fade', 'blur2'],
         animation: 'random',

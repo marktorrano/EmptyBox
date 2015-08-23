@@ -204,6 +204,10 @@ body {
     left: ;
 }
 
+#buttons a{
+    margin: 0 10px;
+}
+
 #myName {
     white-space: nowrap;
     overflow: hidden;

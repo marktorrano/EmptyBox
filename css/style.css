@@ -215,15 +215,24 @@ body {
     font-weight: 400;
     animation: type 4s steps(50, end);
     -webkit-animation: type 4s steps(50, end);
+    -moz-animation: type 4s steps(50, end);
+    -ms-animation: type 4s steps(50, end);
+    -o-animation: type 4s steps(50, end);
 }
 
 p#myName:nth-child(2){
     animation: type2 6s steps(60, end);
     -webkit-animation: type2 6s steps(60, end);
+    -moz-animation: type2 6s steps(60, end);
+    -ms-animation: type2 6s steps(60, end);
+    -o-animation: type2 6s steps(60, end);
 }
 
 #insertion {
     -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
     font-family: sans-serif;
     font-size: 25px;
 }

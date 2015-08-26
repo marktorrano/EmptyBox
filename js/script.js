@@ -2,6 +2,30 @@ $(document).ready(function(){
 
 
    /*$('.parallax').parallax();*/
+    /* ScrollSpy Area */
+
+
+/*    $('#sticky-navigation').scrollspy({
+
+        min: $('#nav').offset().top,
+
+        onEnter: function(element, position) {
+
+            $("#nav").addClass('fixed');
+
+        },
+
+        onLeave: function(element, position) {
+
+            $("#nav").removeClass('fixed');
+
+        }
+    });*/
+
+
+
+
+    /* ScrollSpy Area */
 
 
 

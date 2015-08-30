@@ -5,19 +5,16 @@ $(document).ready(function(){
     /* ScrollSpy Area */
 
 
-/*    $('#sticky-navigation').scrollspy({
+/*    $('#').scrollspy({
 
-        min: $('#nav').offset().top,
+        min: $('#').offset().top,
 
         onEnter: function(element, position) {
-
-            $("#nav").addClass('fixed');
 
         },
 
         onLeave: function(element, position) {
 
-            $("#nav").removeClass('fixed');
 
         }
     });*/
@@ -33,6 +30,7 @@ $(document).ready(function(){
     vph = $(window).height();
 
     $('.section-1').height(vph);
+   /* $('#portfolio-mockup').height(vph);*/
 
     /* Load arrow after 10 secs */
 

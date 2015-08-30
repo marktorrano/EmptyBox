@@ -27,7 +27,7 @@ time, mark, audio, video {
 
 
 html {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('') no-repeat center center fixed;
+  background: linear-gradient( rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) ), url('') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,7 +37,7 @@ html {
 body {
     font-family: source code pro, sans-serif;
     font-weight: 100;
-    background: url('') #212121 no-repeat center center fixed;
+    background: url('') #fff no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -421,7 +421,22 @@ img.exempt {
     height: auto;
 }*/
 
+#portfolio-mockup {
+    background: #fff url('../images/portfolio-mockup.png') no-repeat;   
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}
 
+#casestudy {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #666;
+    font-weight: 300;
+}
+
+.challenge, .role {
+    border-left: 2px solid #666;   
+}
 
 .background-text {
     background: #2E2D2D;
@@ -670,5 +685,78 @@ skill-text {
 
 /******** TEST AREA *********/
 
+        /* PHONE VERSION */
+        @media only screen and (min-width: 320px) and (orientation : landscape){
+            #portfolio-mockup {
+                height: 500px;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+            }
+        }
 
+        @media only screen and (min-width: 320px) and (orientation : portrait) {
+            #portfolio-mockup {
+                height: 550px;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+            }
+        }
 
+        /* TABLET VERSION */
+        @media only screen and (min-width: 768px) and (orientation : landscape){
+            #portfolio-mockup {
+                height: 600px;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (orientation : portrait) {
+            #portfolio-mockup {
+                height: 500px;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+            }
+        }
+
+        /* DESKTOP VERSION */
+        @media only screen and (min-width: 980px) {
+            #portfolio-mockup {
+                height: 700px;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+            }
+        }
+
+#back-button {
+    width: 150px;
+    height: 70px;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    
+}
+
+.span1 {
+    width: 100px;
+    height: 20px;
+    background: red;
+}
+
+.span2 {
+    
+}
+
+.span3 {
+    
+}

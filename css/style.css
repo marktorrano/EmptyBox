@@ -357,7 +357,7 @@ p#myName:nth-child(2){
 img.exempt {
     width: 100%
 }
-
+/*
 #img-4 {
 
     background: url('/images/wf.png') no-repeat;
@@ -388,7 +388,7 @@ img.exempt {
     background-size: cover;
     float: left;
     width: 100%;
-}
+}*/
 
 /*#html-circle {
  background: url('/images/html.png') no-repeat;

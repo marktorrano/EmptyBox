@@ -42,6 +42,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    color:#444;
 }
 
 .main-container {
@@ -759,4 +760,44 @@ skill-text {
 
 .span3 {
     
+}
+
+.colour-palette {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+
+.colour-palette:nth-child(2) {
+    background: #2e2d2d;
+}
+
+.colour-palette:nth-child(3) {
+    background: #EEE;
+    border: 1px solid #333;
+}
+
+.colour-palette:nth-child(4) {
+    background: #2c3e50;
+}
+
+.colour-palette:nth-child(5) {
+    background: #1e1e20;
+}
+
+
+.image-wf:nth-child(2) {
+    background: url('../images/wf-measure-min.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px
+}
+
+.image-wf:nth-child(3) {
+    background: url('../images/globe-measure-min.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px
 }

@@ -21,6 +21,7 @@ $(document).ready(function(){
 
 
 
+    
 
     /* ScrollSpy Area */
 
@@ -200,10 +201,11 @@ function onReady(callback) {
         if (document.readyState === "complete") {
             $('.svg-logo').removeClass('pulse');
             $('.svg-logo').addClass('bounceOutUp');
-            $('.svg-logo').removeClass('invinite');
+            $('.svg-logo').removeClass('infinite');            
             window.clearInterval(intervalID);
             callback.call(this);
         }
+        
     }
 }
 

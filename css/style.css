@@ -35,14 +35,24 @@ html {
 }
 
 body {
-    font-family: source code pro, sans-serif;
-    font-weight: 100;
+    font-family: montserrat, sans-serif;
+    font-weight: lighter;
     background: url('') #fff no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
     color:#444;
+}
+
+.medium-text {
+    font-size: 20px;
+    line-height: 4em;
+    font-weight: 100;
+}
+
+.about-me {
+    margin: 5% 0;
 }
 
 .main-container {
@@ -684,6 +694,7 @@ skill-text {
 
 	}
 
+
 /******** TEST AREA *********/
 
         /* PHONE VERSION */
@@ -695,6 +706,13 @@ skill-text {
                 -moz-transition: all 1s ease;
                 -o-transition: all 1s ease;
             }
+            
+            .medium-text {
+                font-size: 20px;
+                line-height: 3em;
+                font-weight: 100;
+            }
+            
         }
 
         @media only screen and (min-width: 320px) and (orientation : portrait) {
@@ -705,6 +723,13 @@ skill-text {
                 -moz-transition: all 1s ease;
                 -o-transition: all 1s ease;
             }
+            
+            .medium-text {
+                font-size: 16px;
+                line-height: 3em;
+                font-weight: 100;
+            }
+            
         }
 
         /* TABLET VERSION */
@@ -716,6 +741,13 @@ skill-text {
                 -moz-transition: all 1s ease;
                 -o-transition: all 1s ease;
             }
+            
+            .medium-text {
+                font-size: 18px;
+                line-height: 3em;
+                font-weight: 100;
+            }
+            
         }
 
         @media only screen and (min-width: 768px) and (orientation : portrait) {
@@ -726,6 +758,13 @@ skill-text {
                 -moz-transition: all 1s ease;
                 -o-transition: all 1s ease;
             }
+            
+            .medium-text {
+                font-size: 18px;
+                line-height: 3em;
+                font-weight: 100;
+            }
+            
         }
 
         /* DESKTOP VERSION */
@@ -788,15 +827,29 @@ skill-text {
 }
 
 
-.image-wf:nth-child(2) {
+.image-wf-phase2:nth-child(2) {
     background: url('../images/wf-measure-min.png') no-repeat;
     background-position: center;
     background-size: contain;
     height: 300px;
 }
 
-.image-wf:nth-child(3) {
+.image-wf-phase2:nth-child(3) {
     background: url('../images/globe-measure-min.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+}
+
+.image-wf-phase1:nth-child(2) {
+    background: url('../images/wf-phase11.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+}
+
+.image-wf-phase1:nth-child(3) {
+    background: url('../images/wf-phase12.png') no-repeat;
     background-position: center;
     background-size: contain;
     height: 300px;
